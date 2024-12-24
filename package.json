@@ -1,0 +1,19 @@
+{
+  "name": "utools-vscode",
+  "version": "v1.5.2",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "20.16.0",
+    "@types/sql.js": "^1.4.9",
+    "utools-api-types": "^6.0.0",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "utools-helper": "^2.2.0"
+  },
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w"
+  }
+}

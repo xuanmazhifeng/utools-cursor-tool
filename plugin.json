@@ -1,0 +1,48 @@
+{
+  "name": "830ef6d0",
+  "pluginName": "cursor-tools",
+  "description": "快速搜索cursor历史项目并且在cursor中打开",
+  "version": "v1.0.0",
+  "preload": "dist/preload.js",
+  "author": "xiaoxiao",
+  "homepage": "https://github.com/mohuishou/utools",
+  "logo": "icon/icon.png",
+  "features": [
+    {
+      "code": "csl",
+      "explain": "cursor历史项目搜索",
+      "cmds": ["csl"],
+      "icon": "icon/icon.png"
+    },
+    {
+      "code": "cs-open",
+      "explain": "在cursor中打开",
+      "cmds": [
+        {
+          "type": "files",
+          "label": "在cursor中打开文件",
+          "fileType": "file"
+        },
+        {
+          "type": "files",
+          "label": "在cursor中打开文件夹",
+          "fileType": "directory"
+        },
+        {
+          "type": "window",
+          "label": "在cursor中打开文件夹",
+          "match": {
+            "app": ["explorer.exe", "finder.app"]
+          }
+        }
+      ],
+      "icon": "icon/icon.png"
+    },
+    {
+      "code": "cursor-setting",
+      "explain": "cursor 历史搜索配置信息",
+      "cmds": ["cursor-setting"],
+      "icon": "icon/icon.png"
+    }
+  ]
+}
